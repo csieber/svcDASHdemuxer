@@ -11,7 +11,7 @@ Clone the repository, spin up the VM and ssh into the machine:
 
 ```bash
 git clone git@github.com:csieber/svcDASHdemuxer.git
-cd svcDASHdemuxer/
+cd svcDASHdemuxer/vagrant/
 
 vagrant up
 vagrant shh
