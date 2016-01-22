@@ -20,11 +20,11 @@ vagrant shh
 Inside the machine, download an example video:
 
 ```bash
-apt-get install unzip
+sudo apt-get install unzip
 
 cd /svcDASHdemuxer/bin
 
-http://sourceforge.net/projects/opensvcdecoder/files/Video%20Streams/video_5.zip/download -O video_5.zip
+wget http://sourceforge.net/projects/opensvcdecoder/files/Video%20Streams/video_5.zip/download -O video_5.zip
 
 unzip video_5.zip
 ```
@@ -32,7 +32,7 @@ unzip video_5.zip
 Finally demux the example bitstream:
 
 ```bash
-cd demuxed
+mkdir demuxed
 ./svcDASHdemuxer_d -i video_5/video_5.264 -o demuxed/ --filename-prefix video5_
 ```
 
